@@ -1,0 +1,260 @@
+
+/* general styling */
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    background: url("images/bg-mobile.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* body {
+    background-image: url("images/bg-mobile.png");
+} */
+
+/* fonts, p, h1 */
+
+.bold {
+    font-weight: 700;
+}
+
+.gb-range-font {
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+    margin-top: .5em;
+}
+
+.container--storage-left h2{
+    color: black;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    padding: .25em .25em;
+}
+
+.container--storage-left p {
+    color: hsl(229, 7%, 55%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .1em;
+}
+
+/* images and icons */
+
+img {
+    display: block;
+}
+
+.logo {
+    margin-left: 3em;
+    padding-top: 3em;
+}
+
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    margin: 0 auto;
+    margin-top: .75em;
+    vertical-align: middle;
+}
+
+.icon--folder {
+    margin-top: .9em;
+}
+
+.icon--upload {
+    margin-top: 1em;
+}
+
+.icon-border {
+    display: inline-block;
+    background-color: hsl(229, 57%, 11%);
+    height: 3.25em;
+    width: 3.25em;
+    border-radius: .5em;
+}
+
+.icon-border + .icon-border {
+    margin-left: 1em;
+}
+
+/* containers and modules */
+
+.card-container {
+    max-width: 325px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hero-container {
+    background-color: hsl(228, 56%, 26%);
+    max-width: 325px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 9em;
+    border-radius: 1em;
+    border-top-right-radius: 7em;
+}
+
+.icon-container {
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-bottom: 2.25em;
+    /* border: 2px solid red; */
+    width: 75%;
+}
+
+.user-data-container {
+    background-color: hsl(228, 56%, 26%);
+    max-width: 325px;
+    margin: 0 auto;
+    margin-top: 1.25em;
+    text-align: center;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-data-container--content {
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.slider-container {
+    background-color: hsl(229, 57%, 11%);
+    height: 10%;
+    width: 100%;
+    margin: 0 auto;
+    border: .2em solid hsl(229, 57%, 11%);
+    border-radius: 1em;
+    /* border: 2px solid green; */
+}
+
+.slider {
+    height: 1em;
+    border-radius: 1em;
+    width: 75%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slider--circle {
+    background-color: white;
+    width: .75em;
+    height: .75em;
+    border-radius: 50%;
+    margin-right: .2em;
+}
+
+.gb-range-container {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container--storage-left {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -2em;
+    border-radius: .7em;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+
+.attribution {
+    margin-top: 5em;
+}
+
+/* media queries */
+
+@media (min-width: 380px) {
+    html {
+        background-color: hsl(229, 57%, 11%);
+        background: url(images/bg-desktop.png) no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }   
+}
+
+@media (min-width: 900px) {
+
+    .p-storage-left {
+        text-align: left;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        height: 50%;
+        /* border: 2px solid red; */
+        position: relative;
+        margin-top: 20em;
+    }
+
+    .hero-container {
+        width: 25em;
+        max-width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .user-data-container {
+        max-width: 600px;
+        width: 57.5%;
+        height: 10em;
+        margin: 0; 
+        padding: 0;
+        align-self: flex-end;
+        /* border: 1px solid green; */
+    }
+
+    .user-data-container--content {
+        width: 85%;
+        /* border: 1px solid green; */
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container--storage-left {
+        width: 20%;
+        position: absolute;
+        right: 0;
+        margin-top: -8em;
+        margin-right: 2.5em;
+    }
+
+    .container--storage-left::after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 10.44em;
+        top: 3.75em;
+        border: 1.2em solid;
+        border-color: #fff #fff transparent transparent;
+    }
+    
+}

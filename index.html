@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font link - Raleway -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
@@ -16,16 +18,67 @@
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <div class="card-container">
 
-  185 GB Left
+    <div class="hero-container">
   
-  0 GB
-  1000 GB
+      <img class="logo" src="images/logo.svg" alt="Fylo logo">
+  
+      <div class="icon-container">
+        <div class="icon-border">
+          <img class="icon icon--document" src="images/icon-document.svg" alt="document icon">
+        </div>
+        <div class="icon-border">
+          <img class="icon icon--folder" src="images/icon-folder.svg" alt="folder icon">
+        </div>
+        <div class="icon-border">
+          <img class="icon icon--upload" src="images/icon-upload.svg" alt="upload icon">
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="user-data-container row">
+
+      <div class="user-data-container--content row">
+        <p class="p-storage-left">
+          You’ve used <span class="bold">815 GB</span> of your storage
+        </p>
+      
+        <div class="slider-container">
+          <div class="slider row">
+            <div class="slider--circle"></div>
+          </div>
+        </div>
+    
+        <div class="gb-range-container row">
+          <p class="bold gb-range-font">
+            0 GB
+          </p>
+          <p class="bold gb-range-font">
+            1000 GB
+          </p>
+        </div>
+      </div>
+  
+    </div>
+    
+    <div class="container--storage-left row">
+      <h2>
+        185
+      </h2>
+      
+      <p>
+        GB Left
+      </p>
+    </div>
+    
+  </div>
+   
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Matthew Kissinger</a>.
   </div>
 </body>
 </html>
