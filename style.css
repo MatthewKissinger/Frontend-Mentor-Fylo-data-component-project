@@ -203,6 +203,7 @@ img {
     }
 
     .card-container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -238,23 +239,34 @@ img {
 
     }
 
-    .container--storage-left {
-        width: 20%;
+    .speech-bubble--container {
         position: absolute;
-        right: 0;
-        margin-top: -8em;
-        margin-right: 2.5em;
+        right: 2.8em;
+        top: .75em;
+        width: 12em;
+        height: auto;
+        /* border: 2px solid orange; */
     }
 
-    .container--storage-left::after {
-        content: ' ';
+    .container--storage-left {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        border-bottom-right-radius: 0;
+        /* border: 2px solid red; */
+    }
+
+    .container--storage-left:after {
+        content: "";
+        display: block;
         position: absolute;
         width: 0;
         height: 0;
-        left: 10.44em;
-        top: 3.75em;
-        border: 1.2em solid;
-        border-color: #fff #fff transparent transparent;
+        /* border-top: 1.5em solid transparent; */
+        border-bottom: 1.5em solid transparent;
+        border-right: 1.5em solid #FFF;
+        right: 0;
+        top: 4.25em;
     }
     
 }
